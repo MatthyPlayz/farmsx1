@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "farmsxone:blocks/diamond_crop_stage_1"
+    }
+}

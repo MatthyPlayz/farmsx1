@@ -1,0 +1,16 @@
+[
+{
+  "modid": "farmsxone",
+  "name": "Farms X1",
+  "description": "More stuff for farming!",
+  "version": "1.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["MatthyPlayz/Gleamzbot"],
+  "credits": "The internet for all the help! :D",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
