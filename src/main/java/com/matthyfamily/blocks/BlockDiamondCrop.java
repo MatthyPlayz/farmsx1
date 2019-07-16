@@ -10,7 +10,6 @@ import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.AxisAlignedBB;
@@ -18,6 +17,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.common.EnumPlantType;
 
 public class BlockDiamondCrop extends BlockCrops {
 
@@ -52,9 +52,14 @@ public class BlockDiamondCrop extends BlockCrops {
 
 	protected boolean canSustainBush(IBlockState state)
 	{
-		 return state.getBlock() == Blocks.FARMLAND;
+		 return true;
 	}
+	@Override
+    public EnumPlantType getPlantType(IBlockAccess world, BlockPos pos) {
 
+        return EnumPlantType.Crop;
+
+    }
 	public boolean canBlockStay(World worldIn, BlockPos pos, IBlockState state)
 	{
 		IBlockState soil = worldIn.getBlockState(pos.down());
